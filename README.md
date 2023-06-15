@@ -1,2 +1,2 @@
 # EBANC
- códigos desenvolvidos durante o webinar da EBANC - Criando um clone do TikTok!
+ códigos desenvolvidos durante o workshop da EBANC - Criando um clone do TikTok!
