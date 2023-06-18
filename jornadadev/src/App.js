@@ -34,16 +34,6 @@ function App() {
             />
           );
         })}
-
-        {/* <Video 
-        likes={449}
-        messages={180}
-        shares={90}
-        name="Wiid"
-        description="gatin!"
-        music="Clap your hands"
-        url= "https://poqlymuephttfsljdabn.supabase.co/storage/v1/object/public/jornadadev/bird.mp4?t=2023-05-22T19%3A40%3A47.052Z"
-        /> */}
       </div>
     </div>
   );
