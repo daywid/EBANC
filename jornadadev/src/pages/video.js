@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import VideoFooter from "./components/footer/VideoFooter";
 import VideoSidebar from "./components/sidebar/VideoSidebar";
 import "./video.css";
@@ -7,6 +7,24 @@ import "./video.css";
 function Video({likes, messages, shares, name, description, music, url}) {
   const videoRef = useRef(null);
   const [play, setPlay] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = (event) => {
+      if (event.deltaY > 0) {
+        videoRef.current.pause();
+        setPlay(false);
+      } else if (event.deltaY < 0) {
+        videoRef.current.pause();
+        setPlay(false);
+      }
+    };
+
+    document.addEventListener("wheel", handleScroll);
+
+    return () => {
+      document.removeEventListener("wheel", handleScroll);
+    };
+  }, []);
 
   function handdleStart() {
     if (play) {
