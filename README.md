@@ -1,2 +1,2 @@
-## EBANC
- Códigos desenvolvidos durante o workshop da EBANC - Criando um clone do TikTok!
+## TikTok clone
+ Project cloning the TikTok UI with React.js
